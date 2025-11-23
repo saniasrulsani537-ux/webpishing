@@ -1,0 +1,314 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background: #024516;
+  color: rgb(230, 143, 4);
+}
+
+/*  BAGIAN NAVBAR */
+.navbar {
+  background: #040606;
+  padding: 15px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: rgb(100, 98, 104);
+  font-weight: 700;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #f1652e;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.nav-links a:hover {
+  color: rgb(28, 236, 84);
+}
+
+/*  GARIS 3 / HAMBURGER */
+.hamburger {
+  font-size: 28px;
+  cursor: pointer;
+  display: none;
+  color: white;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+/* BAGIAN LOGIN BOX */
+.login-box {
+  background: #1c1c1c;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid rgb(73, 244, 67);
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 6px;
+  border: 1px solid #666;
+  background: #2b2b2b;
+  color: white;
+}
+
+/* BUTTON */
+.btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  background: rgb(73, 244, 67);
+  color: #000;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #ed8805;
+}
+
+/* BUTTON KEMBALI */
+.btn-back {
+  display: inline-block;
+  background: #222;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  margin-bottom: 20px;
+  border: 2px solid rgb(73, 244, 67);
+}
+
+.btn-back:hover {
+  background: rgb(73, 244, 67);
+  color: black;
+}
+
+/* BAGIAN PAKET GRID */
+.paket-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.paket-card {
+  background: #070503;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  color: rgb(96, 233, 10);
+  box-shadow: 0 0 15px rgba(25, 96, 80, 0.15);
+}
+.paket-card a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+/*  BAGIAN PROFILE ABOUT */
+.profile-card {
+  display: flex;
+  gap: 20px;
+  background: #a8bbdd;
+  padding: 20px;
+  border-radius: 12px;
+  color: rgb(0, 0, 0);
+}
+
+.profile-card img {
+  width: 150px;
+  border-radius: 12px;
+}
+
+/* MAPS / PETA */
+.map-container iframe {
+  width: 100%;
+  height: 350px;
+  border-radius: 8px;
+  border: none;
+}
+
+/* RESPONSIVE UNTUK HP */
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: #0a0a0a;
+    width: 180px;
+    display: none;
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 8px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+/* MOBILE TEXT */
+@media (max-width: 480px) {
+  h2,
+  h3 {
+    text-align: center;
+  }
+
+  .profile-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  input,
+  textarea {
+    font-size: 14px;
+  }
+
+  .map-container iframe {
+    height: 250px;
+  }
+}
+
+/* BAGIAN SUCCESS */
+.success-box {
+  background: #112240;
+  padding: 25px;
+  border-radius: 12px;
+  color: white;
+  text-align: center;
+  border: 1px solid rgb(73, 244, 67);
+  box-shadow: 0 0 15px rgba(100, 255, 218, 0.15);
+}
+
+/* CONTAINER UTAMA — GARIS KOTAK atas bawah kiri kanan */
+.container {
+  width: 90%;
+  max-width: 650px; /* dari sebelumnya 900px → terlalu besar */
+  margin: 20px auto; /* atas bawah 20px */
+  padding: 20px; /* ruang pas, tidak terlalu longgar */
+  background: rgba(255, 255, 255, 0.04); /* sedikit efek biar elegan */
+  border-radius: 10px;
+}
+
+/* Jarak antar teks biar lebih rapi */
+.container h1,
+.container h2,
+.container h3,
+.container p {
+  margin-bottom: 15px;
+}
+
+/* Kotak login lebih kecil & proporsional */
+.login-box {
+  padding: 20px;
+}
+
+/* “Paket” card lebih kecil dan simetris */
+.paket-card {
+  padding: 15px;
+}
+
+/* About page — card lebih compact */
+.profile-card {
+  padding: 15px;
+}
+
+/* Responsif HP — lebih rapi */
+@media (max-width: 480px) {
+  .container {
+    width: 95%;
+    padding: 15px;
+    margin-top: 15px;
+  }
+}
+
+/* BAGIAN FOTO */
+.intro-text {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.intro-text h1 {
+  color: rgb(245, 145, 11);
+  font-family: "Times New Roman", serif;
+}
+
+.intro-text h2 {
+  color: rgb(245, 146, 11);
+  font-family: Arial, sans-serif;
+}
+
+.intro-text h3 {
+  color: rgb(226, 239, 227);
+  font-family: "Times New Roman", serif;
+}
+
+.intro-text p {
+  color: rgb(5, 240, 228);
+  font-family: Consolas, monospace;
+}
+
+.hero {
+  width: 100%;
+  height: 70vh; /* full 1 layar */
+  background-image: url("sani.jpg"); /* ganti sesuai nama file kamu */
+  background-size: cover; /* supaya tidak zoom */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: black; /* warna belakang jika ada ruang */
+}
+
+/* BAGIAN ICON */
+
+footer {
+  width: 100%;
+  background-color: #111;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons img {
+  width: 24px; /* ukuran ikon */
+  height: 24px;
+  margin: 0 10px; /* jarak antara ikon */
+  filter: invert(1); /* supaya ikon jadi warna putih */
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.social-icons img:hover {
+  opacity: 0.7;
+}

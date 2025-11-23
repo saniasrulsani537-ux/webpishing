@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- NAVBAR SERAGAM -->
+    <nav class="navbar">
+      <h2 class="logo">Voucher Gratisan</h2>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="login.html">Login</a>
+        <a href="paket.html">Paket</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="hamburger" id="hamburgerBtn">☰</div>
+    </nav>
+
+    <div class="container">
+      <a href="index.html" class="btn-back">Kembali</a>
+
+      <div class="login-box">
+        <p
+          style="
+            text-align: center;
+            color: rgb(23, 236, 7);
+            font-size: 50px;
+            font-weight: bold;
+            font-family: 'Times New Roman', serif;
+          "
+        >
+          Login
+        </p>
+
+        <input id="username" type="text" placeholder="Masukkan Username" />
+        <input id="password" type="password" placeholder="Masukkan Password" />
+
+        <button class="btn" onclick="loginCheck()">Masuk</button>
+
+        <!-- Pesan login sukses / gagal -->
+        <p
+          id="loginMessage"
+          style="text-align: center; font-weight: bold; margin-top: 10px"
+        ></p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
